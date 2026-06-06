@@ -8,15 +8,11 @@ import android.os.Build
 import android.provider.MediaStore
 import com.example.data.model.Artist
 import com.example.data.model.MusicTrack
-import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import javax.inject.Inject
-import javax.inject.Singleton
 
-@Singleton
-class MusicRepository @Inject constructor(
-    @ApplicationContext private val context: Context
+class MusicRepository(
+    private val context: Context
 ) {
     private val mockTracks = listOf(
         MusicTrack(

@@ -9,15 +9,11 @@ import android.provider.MediaStore
 import android.util.Size
 import com.example.data.model.VideoFile
 import com.example.data.model.VideoFolder
-import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import javax.inject.Inject
-import javax.inject.Singleton
 
-@Singleton
-class VideoRepository @Inject constructor(
-    @ApplicationContext private val context: Context
+class VideoRepository(
+    private val context: Context
 ) {
     private val mockVideos = listOf(
         VideoFile(

@@ -138,7 +138,7 @@ fun VideoPlayerScreen(
                     useController = false
                     player = exoPlayer
                     // Ensure the subtitle layout is ready
-                    subtitleView?.setTextSize(TypedValue.COMPLEX_UNIT_SP, subFontSize)
+                    subtitleView?.setFixedTextSize(TypedValue.COMPLEX_UNIT_SP, subFontSize)
                     subtitleView?.setStyle(
                         CaptionStyleCompat(
                             subTextColor.toArgb(),
@@ -153,7 +153,7 @@ fun VideoPlayerScreen(
             },
             update = { playerView ->
                 playerView.subtitleView?.let { subView ->
-                    subView.setTextSize(TypedValue.COMPLEX_UNIT_SP, subFontSize)
+                    subView.setFixedTextSize(TypedValue.COMPLEX_UNIT_SP, subFontSize)
                     subView.setStyle(
                         CaptionStyleCompat(
                             subTextColor.toArgb(),

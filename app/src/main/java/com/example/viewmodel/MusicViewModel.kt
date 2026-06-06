@@ -234,7 +234,7 @@ class MusicViewModel(
     fun nextTrack() {
         val player = exoPlayer ?: return
         if (player.hasNextMediaItem()) {
-            player.seekToNextMediaSources()
+            player.seekToNextMediaItem()
         } else if (_isShuffle.value) {
             // Pick random track
             val randomTrack = _allTracks.value.randomOrNull()
@@ -248,7 +248,7 @@ class MusicViewModel(
     fun previousTrack() {
         val player = exoPlayer ?: return
         if (player.hasPreviousMediaItem()) {
-            player.seekToPreviousMediaSources()
+            player.seekToPreviousMediaItem()
         } else {
             player.seekTo(0, 0L) // restart
         }

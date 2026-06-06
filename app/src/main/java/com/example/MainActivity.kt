@@ -138,7 +138,7 @@ class MainActivity : ComponentActivity() {
                             drawerState = drawerState,
                             drawerContent = {
                                 ModalDrawerSheet(
-                                    containerColor = MaterialTheme.colorScheme.surface,
+                                    drawerContainerColor = MaterialTheme.colorScheme.surface,
                                     modifier = Modifier.width(280.dp)
                                 ) {
                                     Spacer(modifier = Modifier.height(20.dp))
