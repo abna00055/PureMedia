@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PureMedia" parent="android:Theme.DeviceDefault.NoActionBar">
+        <!-- Status bar and navigation colors configured via Compose edge-to-edge -->
+    </style>
+</resources>

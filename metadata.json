@@ -1,0 +1,6 @@
+{
+  "name": "PureMedia Player",
+  "description": "Unified high-performance video and music player written in Kotlin using Jetpack Compose and Media3 ExoPlayer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
